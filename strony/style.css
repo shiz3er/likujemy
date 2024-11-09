@@ -1,0 +1,158 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tło z wideo */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#bg-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+}
+
+/* Główna zawartość strony */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+
+/* Przycisk CTA */
+.cta .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff0000; /* Czerwony kolor */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #cc0000; /* Ciemniejszy czerwony */
+    transform: translateY(-5px);
+}
+
+/* HUD - Nowy interfejs z zakładkami */
+.hud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding-top: 50px;
+    animation: fadeIn 2s ease-out;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: #ff0000; /* Czerwony kolor */
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #cc0000; /* Ciemniejszy czerwony */
+}
+
+.tab-content {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 1s ease-out;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Animacja fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Stopka */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1em;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+/* Wygładzenie krawędzi obrazów i filmów oraz animacja powiększenia */
+.media-preview {
+    border-radius: 15px; /* Zaokrąglone krawędzie dla zdjęć i filmów */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Płynna animacja powiększania */
+}
+
+.media-preview:hover {
+    transform: scale(1.05); /* Powiększenie elementu */
+    filter: brightness(1.1); /* Efekt rozjaśnienia przy najechaniu */
+}
+
+.video-preview {
+    border-radius: 15px; /* Zaokrąglenie krawędzi filmu */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Płynne przejście */
+}
+
+.video-preview:hover {
+    transform: scale(1.05); /* Powiększenie elementu */
+    filter: brightness(1.1); /* Efekt rozjaśnienia przy najechaniu */
+}
+

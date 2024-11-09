@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedofilia.pl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tło z wideo -->
+    <div class="background-video">
+        <video autoplay muted loop id="bg-video">
+            <source src="tlo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Główna zawartość strony -->
+    <div class="content" id="main-content">
+        <header class="header-container">
+            <h1>Witaj w moim burdelu</h1>
+            <p>Odkryj jak piękna może być prostytucja</p>
+        </header>
+
+        <section class="cta">
+            <a href="#" class="btn" id="start-button">Zacznij Teraz</a>
+        </section>
+    </div>
+
+    <!-- HUD z zakładkami -->
+    <div class="hud" id="hud" style="display: none;">
+        <div class="tabs">
+            <button class="tab" onclick="changeTab('main')">Główne</button>
+            <button class="tab" onclick="changeTab('tab1')">Leak 1</button>
+            <button class="tab" onclick="changeTab('tab2')">Leak 2</button>
+            <button class="tab" onclick="changeTab('tab3')">Leak 3</button>
+            <button class="tab kliknij-tab" onclick="changeTab('jumpscare')">Klikaj</button>
+        </div>
+        
+        <div class="tab-content">
+            <!-- Zakładka Główne -->
+            <div id="main" class="tab-pane active">
+                <h2>Randomofon</h2>
+                <p>https://discord.gg/xPYmPupSEv</p>
+            </div>
+
+            <!-- Zakładka Leak 1 -->
+            <div id="tab1" class="tab-pane">
+                <h2>SpoconyKolo</h2>
+                <p>Marcel Żurawski</p>
+                <img src="images/leak1.png" alt="Opis zdjęcia Leak 1" id="leak1-image" class="media-preview">
+                <div id="tab1-description">
+                    <p>Nie podam haha</p>
+                </div>
+            </div>
+
+            <!-- Zakładka Leak 2 -->
+            <div id="tab2" class="tab-pane">
+                <h2>ADMAN_702</h2>
+                <p>Adam Rola</p>
+                <img src="images/leak2.jpg" alt="Opis zdjęcia Leak 2" id="leak2-image" class="media-preview">
+                <div id="tab2-description">
+                    <p>https://www.facebook.com/adam.rol.3</p>
+                </div>
+            </div>
+
+            <!-- Zakładka Leak 3 -->
+            <div id="tab3" class="tab-pane">
+                <h2>ospek29</h2>
+                <p>Igor Haluszczak</p>
+                <img src="images/leak3.jpg" alt="Opis zdjęcia Leak 3" id="leak3-image" class="media-preview">
+                <div id="tab3-description">
+                    <p>https://www.facebook.com/profile.php?id=100092254642439</p>
+                </div>
+            </div>
+
+            <!-- Zakładka JumpScare -->
+            <div id="jumpscare" class="tab-pane">
+                <h2>JumpScare</h2>
+                <p>Przygotuj się na ruchanie</p>
+                <video controls autoplay>
+                    <source src="jumpscare.mp4" type="video/mp4">
+                    Twoja przeglądarka nie obsługuje tego formatu wideo.
+                </video>
+                <div id="jumpscare-description">
+                    <p>Lizał byś?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tło muzyczne z YouTube -->
+    <div class="background-music">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&loop=1&playlist=dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
